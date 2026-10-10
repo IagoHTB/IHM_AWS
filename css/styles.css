@@ -1,0 +1,91 @@
+@layer base {
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+body {
+    overscroll-behavior: none;
+    font-family: "Geist", sans-serif;
+    background: #0b0e14;
+    color: #e1e2eb;
+}
+
+main > :first-child {
+    margin-top: 0 !important;
+}
+
+.site-header {
+    background: rgba(16, 19, 26, 0.85) !important;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+}
+
+.site-header .navbar-brand {
+    letter-spacing: 0.12em;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at top, rgba(52, 145, 255, 0.22), transparent 35%), #10131a;
+}
+
+.hero-glow {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: rgba(168, 200, 255, 0.12);
+    filter: blur(100px);
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-badge {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.45rem 0.9rem;
+    border: 1px solid rgba(168, 200, 255, 0.35);
+    border-radius: 999px;
+    color: #a8c8ff;
+    letter-spacing: 0.16em;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.hero h1 {
+    position: relative;
+    z-index: 1;
+    font-family: "Space Grotesk", sans-serif;
+    letter-spacing: -0.04em;
+}
+
+.hero .lead {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #c0c6d6;
+    font-size: 1.15rem;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.hero .btn {
+    min-width: 220px;
+}
+
